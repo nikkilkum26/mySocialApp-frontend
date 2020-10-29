@@ -13,7 +13,7 @@ function CreatePost() {
     useEffect(()=>{
 if(url){
 
-        fetch("http://localhost:5000/post/createpost",{
+        fetch("https://globalmedia.herokuapp.com/post/createpost",{
             method:"post",
             headers:{
                 "Content-type":"application/json",

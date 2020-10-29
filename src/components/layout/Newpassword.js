@@ -15,7 +15,7 @@ function Login() {
 
     let sendData=()=>{
         
-        fetch("http://localhost:5000/auth/newpassword",{
+        fetch("https://globalmedia.herokuapp.com/auth/newpassword",{
         method:"post", 
         headers:{
             "Content-type":"application/json"

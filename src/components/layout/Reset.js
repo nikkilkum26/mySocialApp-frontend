@@ -15,7 +15,7 @@ function Reset() {
            M.toast({html: "Invalid Email",classes:"#d50000 red accent-4"})
            return 
         }
-        fetch("http://localhost:5000/auth/resetpassword",{
+        fetch("https://globalmedia.herokuapp.com/auth/resetpassword",{
         method:"post",
         headers:{
             "Content-type":"application/json"

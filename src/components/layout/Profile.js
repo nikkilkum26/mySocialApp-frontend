@@ -11,7 +11,7 @@ function Profile() {
    
     useEffect(() => {
 
-        fetch('http://localhost:5000/post/mypost', {
+        fetch('https://globalmedia.herokuapp.com/post/mypost', {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
             }
@@ -37,7 +37,7 @@ function Profile() {
    
           
             
-            fetch('http://localhost:5000/users/updateprofpic',{
+            fetch('https://globalmedia.herokuapp.com/users/updateprofpic',{
                 method:"put",
                 headers:{
                     "Content-type":"application/json",

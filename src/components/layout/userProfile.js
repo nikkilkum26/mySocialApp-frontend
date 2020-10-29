@@ -10,7 +10,7 @@ function Profile() {
     const [showfollow,setshowfollow] = useState(state? !state.following.includes(userid):true)
     
     useEffect(() => {
-        fetch( `http://localhost:5000/users/user/${userid}`, {
+        fetch( `https://globalmedia.herokuapp.com/users/user/${userid}`, {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
             }
@@ -22,7 +22,7 @@ function Profile() {
     }, [userid])
 
     const followUser=()=>{
-        fetch('http://localhost:5000/users/follow',{
+        fetch('https://globalmedia.herokuapp.com/users/follow',{
             method:"put",
             headers: {
                 "Content-Type": "application/json",
@@ -48,7 +48,7 @@ function Profile() {
         setshowfollow(false);
     }
     const unfollowUser=()=>{
-        fetch('http://localhost:5000/users/unfollow',{
+        fetch('https://globalmedia.herokuapp.com/users/unfollow',{
             method:"put",
             headers: {
                 "Content-Type": "application/json",

@@ -7,7 +7,7 @@ function Home() {
     const { state } = useContext(UserContext);
 
     useEffect(() => {
-        fetch('http://localhost:5000/post/allpost', {
+        fetch('https://globalmedia.herokuapp.com/post/allpost', {
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("jwt")
             }
@@ -21,7 +21,7 @@ function Home() {
     }, [])
 
     const likePost = (id) => {
-        fetch('http://localhost:5000/post/like', {
+        fetch('https://globalmedia.herokuapp.com/post/like', {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -47,7 +47,7 @@ function Home() {
     }
 
     const unlikePost = (id) => {
-        fetch('http://localhost:5000/post/unlike', {
+        fetch('https://globalmedia.herokuapp.com/post/unlike', {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -74,7 +74,7 @@ function Home() {
     }
     const makeComment = (text, postId) => {
 
-        fetch('http://localhost:5000/post/comment', {
+        fetch('https://globalmedia.herokuapp.com/post/comment', {
             method: "put",
             headers: {
                 "Content-Type": "application/json",
@@ -104,7 +104,7 @@ function Home() {
     }
 
 const deletePost =(postId) =>{
-    fetch(`http://localhost:5000/post/deletepost/${postId}`,{
+    fetch(`https://globalmedia.herokuapp.com/post/deletepost/${postId}`,{
         method:"delete",
         headers: {
           

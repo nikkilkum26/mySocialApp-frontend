@@ -37,7 +37,7 @@ function Signup() {
             M.toast({ html: "Invalid Email", classes: "#d50000 red accent-4" })
             return
         }
-        fetch("http://localhost:5000/auth/signup", {
+        fetch("https://globalmedia.herokuapp.com/auth/signup", {
             method: "post",
             headers: {
                 "Content-type": "application/json"
