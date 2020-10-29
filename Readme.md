@@ -1,6 +1,6 @@
 Social media app using MERN Stack
 
-Features:
+Features: </br>
 1.User Login Authentication </br>
 2.Follow and Unfollow Users </br>
 3.Users can post Title,captions,with images (Cloudinary is used for cloud storage) </br>
