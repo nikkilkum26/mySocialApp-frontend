@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+.layout__login{
+    display: flex;
+    padding-top: 25px;
+    justify-content: center;
+    height: auto;
+  
+}
+.layout__loginH2{
+    text-align: center;
+    color: black;
+}
+/* .login_background{
+      background-color: #f5f6fa !important ;
+} */
+.btn__login{
+    text-align: justify;
+}
+.card{
+   
+    background: white; 
+    padding:20px;
+    max-width: 400px;
+    margin: 10px auto;
+
+
+}
+.login__font{
+    color: rgb(23, 26, 25);
+    font-family: 'Inter', sans-serif;
+}
+.layout__h6{
+    color:#29b6f6 !important;
+}
+
+#toast-container{
+    top:60px !important;
+    right:20px !important;
+    left: auto !important;
+    
+}

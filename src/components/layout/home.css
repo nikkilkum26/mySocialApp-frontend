@@ -1,0 +1,75 @@
+
+.home-card{
+    max-width: 500px;
+    height: max-content;
+}
+.rainbow{
+    cursor: pointer;
+
+/* -webkit-animation: rainbow 5s infinite;
+
+-ms-animation: rainbow 5s infinite;
+
+animation: rainbow 5s infinite;   */
+
+/* background-image: linear-gradient(-60deg, violet, indigo, rgb(94, 200, 233), rgb(126, 206, 126), rgb(150, 150, 12), rgb(233, 211, 139), rgb(240, 77, 27));   -webkit-background-clip: text; */
+background-image: conic-gradient(red, yellow, lime,coral, aqua, blue, magenta, red);  -webkit-background-clip: text;
+ color: transparent;
+
+}
+/* Chrome, Safari, Opera */
+
+/* Standar Syntax */
+
+@keyframes rainbow {
+    0% {
+      color: orange;
+      /* transform: rotate(360deg); */
+    }
+    10% {
+      color: purple;
+    }
+    20% {
+      color: red;
+    }
+    30% {
+      color: CadetBlue;
+    }
+    40% {
+      color: yellow;
+    }
+    50% {
+      color: coral;
+    }
+    60% {
+      color: green;
+    }
+    70% {
+      color: cyan;
+    }
+    80% {
+      color: DeepPink;
+    }
+    90% {
+      color: DodgerBlue;
+    }
+    100% {
+      color: orange;
+    }
+  }
+
+.unlike{
+    cursor: pointer;
+
+    color: blue;
+
+}
+
+/* style={{ backgroundImage:"red", cursor: "pointer" }} */
+
+.link {
+  color: #00F !important;
+  text-shadow: 2px 2px 5px black;
+ 
+}
+

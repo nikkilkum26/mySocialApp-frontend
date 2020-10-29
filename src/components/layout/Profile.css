@@ -1,0 +1,24 @@
+.layout__profile{
+    /* display: grid; */
+    max-width: 550px;
+
+    margin: 0px auto;
+}
+.profile__disp{
+    display: flex;
+    justify-content: space-around;
+    margin: 18px 0px;
+    border-bottom: 1px solid grey;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+    
+}
+.item{
+    height: 100px;
+    width: 100px;
+
+}
