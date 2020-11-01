@@ -1,2 +1,2 @@
-UserLogin authentication system using MERN Stack
+Social Media App using MERN Stack
 
